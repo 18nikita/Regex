@@ -33,7 +33,10 @@ public class UserResistrationSystem {
 		System.out.println("Enter your Password contain atleast one number: ");
 		String Password2 = sc.nextLine();
 		System.out.println(Pattern.matches("[a-z A-z 0-9]{8,}+", Password2));
-
+		
+		System.out.println("Enter your Password contain lower & upper case letters with atleast one number & Special Charactar: ");
+		String Password3 = sc.nextLine();
+		System.out.println(Pattern.matches("^(?=.*[A-Z a-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Z a-z\\d@$!%*#?&]{8,}$",Password3));
 	}
 
 }
