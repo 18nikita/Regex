@@ -5,9 +5,10 @@ import java.util.regex.Pattern;
 
 public class UserResistrationSystem {
 
+	static Scanner sc = new Scanner(System.in);
+
 	public static void main(String[] args) {
 		System.out.println("Welcome to User Registration system using Regex");
-		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter your First Name : ");
 		String firstName = sc.nextLine();
@@ -20,6 +21,10 @@ public class UserResistrationSystem {
 		System.out.println("Enter your Email : ");
 		String Email = sc.nextLine();
 		System.out.println(Pattern.matches("[abc][\\.][a-z]+[@][bl][\\.][co][\\.][a-z]{2,3}", Email));
+
+		System.out.println("Enter your Mobile No. : ");
+		CharSequence mobileNum = sc.next();
+		System.out.println(Pattern.matches("(0/91)?[7-9][0-9]{9}", mobileNum));
 
 	}
 
