@@ -30,6 +30,10 @@ public class UserResistrationSystem {
 		String Password = sc.nextLine();
 		System.out.println(Pattern.matches("[a-z A-z]{8,}", Password));
 
+		System.out.println("Enter your Password contain atleast one number: ");
+		String Password2 = sc.nextLine();
+		System.out.println(Pattern.matches("[a-z A-z 0-9]{8,}+", Password2));
+
 	}
 
 }
