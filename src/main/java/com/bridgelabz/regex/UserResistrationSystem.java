@@ -12,11 +12,14 @@ public class UserResistrationSystem {
 		System.out.println("Enter your First Name : ");
 		String firstName = sc.nextLine();
 		System.out.println(Pattern.matches("[A-Z][a-z]{2,}", firstName));
-		
+
 		System.out.println("Enter your Last Name : ");
 		String lastName = sc.nextLine();
 		System.out.println(Pattern.matches("[A-Z][a-z]{2,}", lastName));
 
+		System.out.println("Enter your Email : ");
+		String Email = sc.nextLine();
+		System.out.println(Pattern.matches("[abc][\\.][a-z]+[@][bl][\\.][co][\\.][a-z]{2,3}", Email));
 
 	}
 
