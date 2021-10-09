@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class UserResistrationSystem {
 
 	static Scanner sc = new Scanner(System.in);
-
+																																																																																																																																																																																																																																																																																																																																	
 	public static void main(String[] args) {
 		System.out.println("Welcome to User Registration system using Regex");
 
@@ -24,7 +24,11 @@ public class UserResistrationSystem {
 
 		System.out.println("Enter your Mobile No. : ");
 		CharSequence mobileNum = sc.next();
-		System.out.println(Pattern.matches("(0/91)?[7-9][0-9]{9}", mobileNum));
+		System.out.println(Pattern.matches("^(0/91)?[\\s][7-9][0-9]{9}", mobileNum));
+
+		System.out.println("Enter your Password : ");
+		String Password = sc.nextLine();
+		System.out.println(Pattern.matches("[a-z A-z]{8,}", Password));
 
 	}
 
